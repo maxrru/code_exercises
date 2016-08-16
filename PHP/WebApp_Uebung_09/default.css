@@ -1,0 +1,169 @@
+/* 
+    Created on : 21.04.2015, 15:42:02
+    Author     : Max Ungar und Christian Degenhardt
+*/
+
+
+body{
+  background-color: #8b8a8a;
+  
+
+}
+
+#pagewrap{
+    min-width:900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.test{
+    border:     2px solid black;
+    /*padding:    3px;*/
+    margin:     10px;
+    background-color:#b7b5b5;
+}
+
+#header{
+    height:     225px;
+    width:      900px;
+ 
+}
+
+#sidenav{
+    width:      130px;
+    min-height: 600px;
+    float:      left;
+    
+    
+}
+
+#content{
+    min-width:  200px;
+    width:      auto;
+    min-height: 150px;
+    height:     auto;
+    float:      left;
+}
+
+#footer{
+    max-width:  900px;
+    max-height: 300px;
+    height:     auto;
+    width:      auto;
+    clear:      both;
+    text-align: center;
+}
+
+
+
+.textfeld{
+    height:     20em;
+    width:      20em;
+    
+}
+
+#sidenav ul{
+    list-style-type:none;
+    padding-left: 10px;
+    
+}
+
+#sidenav ul li{
+    display:        block;
+   
+    font-size:      1.5em;
+    
+}
+
+h1{
+    font-size:2em;
+    text-align: center;
+     font-family: Helvetica;
+}
+
+
+
+
+#angaben{
+    background-color:#CCCCCC;
+    border: 1px solid black;
+    border-radius:8px;	
+    padding-top:30px;
+    padding-bottom:30px;
+    margin-bottom:30px;
+}
+
+#geschlecht{
+    background-color:#FFFFFF;
+    padding-top:30px;
+    padding-bottom:30px;
+    margin-top:30px;
+    margin-bottom: 30px;
+}
+
+div.textbox label{
+    padding-right: 0.5em; 
+    width: 6em; 
+    text-align: right; 
+    float: left; 
+}
+
+div.textbox input{ 
+    padding-top: 3px; 
+    display: block;
+    height: 1.5em;
+    width: 11em;
+}
+
+ div.gender{ 
+    text-align: center;
+}
+
+legend{
+    background-color:#FFFFFF;
+    border: 1px solid black;
+}
+
+.button{
+    margin-top:15px;
+    float:right;
+    margin-left:20px;
+    font-size:0.8em;
+}
+
+#ergebnis{
+    text-align: center;
+}
+
+
+
+
+
+
+/*============================================================================*/
+/*============================================================================*/
+table{
+    border:     2px solid black;
+    text-align: center;
+    margin:     3px;
+    border-collapse: collapse;
+}
+
+tr{
+    margin:     0;
+   
+}
+
+td{
+    border:     2px solid black;
+    border-collapse:  collapse;
+     min-width:  7em;
+}
+
+.bg1{
+    background-color: #DDD;
+}
+.bg2{
+    background-color: #8b8a8a;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Spochtseite für Spocht!</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="default.css" type="text/css">
+        <script type="text/javascript" src="bmi.js"></script>
+        <script>
+            callSession();
+        </script>
+
+    </head>
+    <body>
+        
+        <div id="pagewrap">
+            <div id="header"  class="test">
+                <img src="bilder/main-banner.jpg" alt="Bicycle-Banner">
+            </div>
+            <div id="sidenav" class="test">
+                <ul>
+                    <li><a href="index.html">Startseite</a>
+                    </li>
+                    <li><a href="aufgabe3_1.html"> Aufgabe 3.1 </a>
+                    </li>
+                    <li><a href="aufgabe3_2.html"> Aufgabe 3.2 </a>
+                    </li>
+                    <li><a href="aufgabe4_1.html"> Aufgabe 4.1 </a>
+                    </li>
+                    <li><a href="aufgabe6.html">Aufgabe 6</a>
+                    </li>
+                    <li>Über uns
+                    </li>
+                </ul>
+
+
+            </div>
+            <div id="content" class="test">
+                <h1>BMI-Rechner</h1>
+                <!--      <form action="http://vulcan.informatik.hs-fulda.de/bmi_berechnen.php" method="get" onsubmit="return testNameAnmerk()"> -->
+                <form action="http://localhost/WebApp_Uebung_08/BMIBerechnung.php" method="get" onsubmit="return testNameAnmerk()">
+                    <fieldset id="angaben">
+                        <legend>Angaben zur BMI-Berechnung</legend>
+
+                        <div class="textbox">
+                            <label for="gewicht">Gewicht</label>
+                            <input type="number" id="gewicht" name="gewicht" min="0" max="999" placeholder="80" required autofocus><br>
+
+                            <label for="groesse">Größe</label>
+                            <input type ="number" id="groesse" name="groesse" min="0" max="3.00" step="0.01" placeholder="1.80" required>
+                        </div>
+
+                        <fieldset id="geschlecht">
+                            <legend>Geschlecht</legend>
+
+                            <div class="gender">
+                                <input type="radio" name="radGender" id="male" value="m"/> 
+                                <label for="male">Männlich</label>
+
+                                <input type="radio" name="radGender" id="female" value="w"/> 
+                                <label for="female">Weiblich</label>
+                            </div>
+                        </fieldset>
+                        <div class="textbox">
+                            <label for="uname">Name</label>
+                            <input type="text" name="uname" id="uname"   placeholder="Karl Klammer" required><br>
+
+                            <label for="email">EMail</label>
+                            <input type="email" name="email" id="email" placeholder="karl.klammer@mail.com" required autofocus><br>
+
+                            <label for="anmerk">Anmerkungen</label>
+                            <textarea name="anmerk" id="anmerk"  rows="4" cols="20"></textarea><br>
+
+                        </div>
+
+                        <!--<input type="textbox" id="name" name="name"><br>-->
+                        <button type="reset" class="button">Zurücksetzen</button>
+                        <button type="submit" class="button">Absenden</button>
+                        <button type="button" class="button" onclick="calculateBMI();">BMI mit JS berechnen</button>
+                        <button type="button" class="button" onclick="phpbmi();">BMI mit PHP berechnen</button>
+
+                    </fieldset>
+                    <div id="ergebnis">
+                        Ihr Body Mass Index beträgt <span id="bmitxt">___</span>
+                    </div>
+                </form>
+
+
+
+
+            </div>
+            <div id="footer"  class="test">
+                &copy; 2015 Christian Degenhardt und Max Ungar <br>
+                Kurs Web-Applikationen bei Frau Jung<br>
+                Bachelor Angewandte Informatik, SoSe 2015 FH-Fulda<br>
+                Sie sind der <span id="usrcount"></span>. Besucher!
+
+            </div>
+        </div>
+    </body>
+</html>
+<!--pattern="[A-Za-z]+\s[A-Za-z]+"-->

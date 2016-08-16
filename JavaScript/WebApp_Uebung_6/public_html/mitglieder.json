@@ -1,0 +1,42 @@
+[
+    {
+        "Name": "Smith",
+        "Vorname": "John",
+        "Email": "foo@bar.com"
+    },
+    {
+        "Name": "Doe",
+        "Vorname": "Jane",
+        "Email": "jane@doe.org"
+    },
+    {
+        "Name": "Feuerstein",
+        "Vorname": "Fred",
+        "Email": "feuerstein@steinzeit.de"
+    },
+    {
+        "Name": "Derpington",
+        "Vorname": "Derp",
+        "Email": "derp@derpington.org"
+    },
+    {
+        "Name": "Derpington",
+        "Vorname": "Derpette",
+        "Email": "derpette@derpington.org"
+    },
+    {
+        "Name": "von Asgard",
+        "Vorname": "Odin",
+        "Email": "odin@himmelsstuermer.se"
+    },
+    {
+        "Name": "Schwammkopf",
+        "Vorname": "Spongebob",
+        "Email": "schwammkopf@KK.com"
+    },
+    {
+        "Name": "Krabs",
+        "Vorname": "Eugene",
+        "Email": "EK@KK.com"
+    }
+]

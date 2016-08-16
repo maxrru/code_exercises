@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Spochtseite für Spocht!</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="default.css" type="text/css">
+        <script type="text/javascript" src="main.js"></script>
+    </head>
+    <body>
+        <div id="header"  class="test">
+            <img src="bilder/main-banner.jpg" alt="Bicycle-Banner">
+        </div>
+        <div id="sidenav" class="test">
+            <ul>
+                <li><a href="index.html">Startseite</a>
+                </li>
+                <li><a href="aufgabe3_1.html">Aufgabe 1</a>
+                </li>
+                <li><a href="aufgabe3_2.html">Aufgabe 2</a>
+                </li>
+                <li>Fußball
+                </li>
+                <li>Rugby
+                </li>
+                <li>Schach
+                </li>
+                <li>Über uns
+                </li>
+            </ul>
+
+
+        </div>
+        <div id="content" class="test">
+         <h1>Aufgabe 1</h1>
+         <script>
+             document.write("Hallo Welt<br><br>");
+             document.getElementById("content").innerHTML += "Hallo Welt<br><br>";
+             var zahl1=99, zahl2=66;
+             document.write("Wert 1: "+zahl1+" Wert 2: "+zahl2+"<br>");
+             var cache=zahl1, zahl1=zahl2, zahl2=cache;
+             document.write("Wert 1: "+zahl1+" Wert 2: "+zahl2+"<br><br>");
+             
+            document.write("For-Schleife: <br>");
+             
+             for(i=1;i<11;i++)
+             {
+                 if(i%2===0)
+                 {
+                     document.write(i+" : even<br>");
+                 }
+                 else
+                 {
+                     document.write(i+" : odd<br>");
+                 }  
+             }
+             var i=1;
+             
+             document.write("<br>While-Schleife: <br>");
+             while(i<11)
+             {
+                 document.write(i+"<br>");
+                 i++;
+             }
+             i=1;
+             document.write("<br>Do While-Schleife: <br>");
+             do
+             {
+                 document.write(i+"<br>");
+                 i++;
+             }while(i<11);
+             
+             var day;
+             switch (new Date().getDay())
+             {  
+                case 1:
+                    day ="Montag";
+                     break;
+                case 2:
+                    day ="Dienstag";
+                    break;
+                case 3:
+                    day ="Mittwoch";
+                    break;
+                case 4:
+                    day ="Donnerstag";
+                     break;
+                case 5:
+                    day ="Freitag";
+                    break;
+                case 6:
+                    day ="Samstag";
+                    break;
+                case 0:
+                    day ="Sonntag";
+                    break;
+             }
+             document.write("<br>Heute ist " + day +". <br>");
+             
+             var name = prompt("Bitte geben Sie ihren Namen ein:","");
+             window.alert(name);
+             window.confirm(name);
+             
+             
+        </script>
+        </div>
+        <div id="footer"  class="test">
+            &copy; 2015 Christian Degenhardt und Max Ungar <br>
+            Kurs Web-Applikationen bei Frau Jung<br>
+            Bachelor Angewandte Informatik, SoSe 2015 FH-Fulda
+
+
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Spochtseite für Spocht!</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="default.css" type="text/css">
+        <script src="main.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div id="header"  class="test">
+            <img src="bilder/main-banner.jpg" alt="Bicycle-Banner">
+        </div>
+        <div id="sidenav" class="test">
+            <ul>
+                <li><a href="index.html">Startseite</a>
+                </li>
+                <li><a href="aufgabe3_1.html">Aufgabe 1</a>
+                </li>
+                <li><a href="aufgabe3_2.html">Aufgabe 2</a>
+                </li>
+                <li>Fußball
+                </li>
+                <li>Rugby
+                </li>
+                <li>Schach
+                </li>
+                <li>Über uns
+                </li>
+            </ul>
+
+
+        </div>
+        <div id="content" class="test">
+         <h1>Aufgabe 2</h1>
+         <script>
+
+            document.getElementById("content").innerHTML += halloFulda()+"<br>";
+            document.getElementById("content").innerHTML += "<br>"+strings("Web","-Applikationen")+"<br>";
+            document.getElementById("content").innerHTML += "<br>"+"Iterativ: " + iterativ(6,12)+"<br>";
+            document.getElementById("content").innerHTML += "<br>"+"Rekursiv: " + rekursiv(4,25)+"<br>";
+            document.getElementById("content").innerHTML += "<br>"+"Fakultät: " + factorial(5)+"<br>";
+            document.getElementById("content").innerHTML += "<br>"+"Muster:<br>" + pattern(20)+"<br>"; 
+        </script>
+        </div>
+        <div id="footer"  class="test">
+            &copy; 2015 Christian Degenhardt und Max Ungar <br>
+            Kurs Web-Applikationen bei Frau Jung<br>
+            Bachelor Angewandte Informatik, SoSe 2015 FH-Fulda
+
+
+
+        </div>
+    </body>
+</html>
